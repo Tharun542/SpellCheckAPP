@@ -9,13 +9,13 @@ export default function SpellCheck(){
         const inputText = e.target.value;
          setText(inputText);
 
-         const words = text.split(" ");
+         const words = inputText.split(" ");
          const correctWords = words.map((word)=>{
             const correctWord = customDictionary[word.toLowerCase()];
             return correctWord || word;
          });
 
-        //  const correctText = correctWords.join(" ");
+    
 
          const firstCorrection = correctWords.find(
             (word, index)=> word !== words[index]
