@@ -50,7 +50,7 @@ export default function SpellCheckApp() {
 
       {suggestText && (
         <p>
-          Did you mean: <strong>{suggestText}</strong>
+          Did you mean: <strong>{suggestText}</strong>?
         </p>
       )}
     </div>
